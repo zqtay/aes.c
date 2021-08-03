@@ -8,8 +8,8 @@ void unitTest(char* strK,   //key in hexstring
               char* strIv,  //iv in hexstring
               char* strPt,  //Plaintext in hexstring 
               char* strCt,  //Ciphertext in hexstring 
-              u32 dBit,    //Data length in bits in hexstring 
-              u8 kLen)      //AES mode key length
+              u32 dBit,    //Data length in bits
+              u8 kLen)      //AES mode key length in bytes
 {
   u32 dLen = (dBit % 8) ? (dBit >> 3) + 1 : dBit >> 3; //Input byte size
   u8 k[64];
